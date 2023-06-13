@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2"> 
-    <script src="dist/module.js"></script>
+    <!-- <meta http-equiv="refresh" content="2">  -->
     <title>Algorithmicon</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,9 +18,18 @@
             </header>
         </div>
     </div>
-    <section class="bellman-ford algorithm"></section>
+    <div>
+        <h1 class="graph-gen-heading">Graph generation</h1>
+        <section class="algorithm">
+            <canvas  id="graph-canvas" width="800" height="800"></canvas>
+            <input name="vertex" id="v1">
+            <input name="edges" id="e1">
+            <button type="submit" id="graph-build">Calculate</button>
+        </section>
+    </div>
     <section class="fluery algorithm"></section>
     <section></section>
     <footer></footer>
+    <script src="../dest/graph-builder.js"></script>
 </body>
 </html>

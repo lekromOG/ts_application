@@ -4,16 +4,36 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
   
 .top {
   width: 100%;
   background: url('../src/header.jpg') no-repeat;
-  background-size: 100%; 
+  background-size: cover; 
 }
 
 .tint {
   background: rgba(0, 0, 0, 0.5);
+}
+
+.algorithm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.graph-gen-heading {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+#graph-canvas {
+  border: 1px solid black;
+  margin: 50px;
 }
 
 header {
